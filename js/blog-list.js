@@ -8,7 +8,7 @@ function blogList(posts) {
         console.log(img);
         postContainer.innerHTML += `<div class="single-post">
                                         <img src="${img}">
-                                        <div>
+                                        <div class="single-post-text">
                                             <h2>${post.title.rendered}</h2>
                                             <a href="blogspecific.html?id=${post.id}">Les mer</a>
                                         </div>
