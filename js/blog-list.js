@@ -1,6 +1,6 @@
 const url = "https://knudsenweb.no/wp-json/wp/v2/posts?_embed=true";
 const postContainer = document.querySelector(".posts");
-// const singlePost = document.querySelector(".single-post");
+const singlePost = document.querySelector(".single-post");
 
 function blogList(posts) {
     for (post of posts) {
