@@ -137,6 +137,8 @@ footer {
 .container {
     background-color: #8C3A48;
     overflow: hidden;
+    max-width: 300px;
+    margin: 0 auto;
 }
 
 .carousel {

@@ -10,14 +10,14 @@ console.log(imgSize)
 
 slide.style.transform = "translateX(" + (-imgSize * c) + "px)";
 
-next.addEventListener("click", function(){
+slide.addEventListener("touchstart", function(){
     if (c >= img.length -1) return;
     slide.style.transition = "transform 0.5s ease-in-out";
     c++;
     slide.style.transform = "translateX(" + (-imgSize * c) + "px)";
 });
 
-back.addEventListener("click", function(){
+slide.addEventListener("", function(){
     if (c <= 0) return;
     slide.style.transition = "transform 0.5s ease-in-out";
     c--;
