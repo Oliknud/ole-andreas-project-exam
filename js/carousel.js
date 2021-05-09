@@ -5,7 +5,7 @@ const back = document.querySelector(".back");
 const next = document.querySelector(".next");
 
 let c = 1;
-const imgSize = slide.clientWidth;
+const imgSize = 300;
 console.log(imgSize)
 
 slide.style.transform = "translateX(" + (-imgSize * c) + "px)";
