@@ -14,6 +14,8 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #252525;
+    position: relative;
+    overflow: visible;
 }
 
 .nav-mobile {
@@ -25,11 +27,17 @@ body {
 /* Dropdown menu */
 
 .menu-links {
-    display: none;
+    display: flex;
     position: absolute;
     background-color: #252525;
-    height: 80vh;
+    height: 100%;
     width: 100%;
+    transform: translateX(-100%);
+    transition: 0.3s ease;
+}
+
+.menu-links-active {
+    transform: translateX(0%);
 }
 
 .links {
