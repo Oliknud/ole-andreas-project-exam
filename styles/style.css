@@ -129,13 +129,37 @@ footer {
 
 /* slider */
 
-.slider {
-    display: flex;
-    justify-content: center;
-    padding: 10px 20px;
+.carousel-bg {
+    padding: 30px;
     background-color: #8C3A48;
-    padding-bottom: 30px;
 }
+
+.container {
+    background-color: #8C3A48;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    width: 100%;
+}
+
+.next, .back {
+    position: absolute;
+    width: 20px;
+    z-index: 2;
+}
+
+.next {
+    right: 40px;
+    margin-top: 200px;
+}
+
+.back {
+    margin-top: 200px;
+    left: 40px;
+}
+
 
 /* skew svg */
 
