@@ -145,7 +145,7 @@ footer {
 }
 
 .carousel img {
-    width: max-content;
+    object-fit: cover;
 }
 
 .next, .back {
