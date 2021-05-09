@@ -144,6 +144,10 @@ footer {
     width: 100%;
 }
 
+.carousel img {
+    width: fit-content;
+}
+
 .next, .back {
     position: absolute;
     width: 20px;
