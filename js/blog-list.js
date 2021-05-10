@@ -2,6 +2,7 @@ const url = "https://knudsenweb.no/wp-json/wp/v2/posts?_embed=true";
 const postContainer = document.querySelector(".posts");
 const singlePost = document.querySelector(".single-post");
 
+// Fetch and display list of posts
 function blogList(posts) {
     for (post of posts) {
         let img = post._embedded["wp:featuredmedia"][0].source_url;

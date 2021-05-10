@@ -53,19 +53,21 @@ body {
 }
 
 .cross {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     position: absolute;
     margin: 30px;
 }
 
 #burger {
-    width: 30px;
+    width: 25px;
+    height: 25px;
     margin: 30px 0 30px 30px;
 }
 
 #search {
-    width: 30px;
+    width: 25px;
+    height: 25px;
     margin: 30px 30px 30px 0;
 }
 
@@ -94,6 +96,10 @@ footer {
     justify-content: space-between;
     background-color: #8C3A48;
     padding: 30px;
+}
+
+footer p {
+    font-size: 12px;
 }
 
 .social-links {
@@ -135,10 +141,14 @@ footer {
 }
 
 .container {
+    display: flex;
     background-color: #8C3A48;
     overflow: hidden;
-    max-width: 300px;
+    width: 200px;
+    height: 260px;
     margin: 0 auto;
+    align-items: center;
+    justify-content: center;
 }
 
 .carousel {
@@ -148,23 +158,28 @@ footer {
 
 .carousel img {
     object-fit: cover;
+    width: 200px;
+    height: 260px;
 }
 
-.next, .back {
+.back, .next {
     position: absolute;
     width: 20px;
-    z-index: 2;
+    z-index: 1;
+}
+
+.button-toggle {
+    display: none;
 }
 
 .next {
-    right: 40px;
-    margin-top: 200px;
+    margin-left: 250px;
 }
 
 .back {
-    margin-top: 200px;
-    left: 40px;
+    margin-right: 250px;
 }
+
 
 
 /* skew svg */

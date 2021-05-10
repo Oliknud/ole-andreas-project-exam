@@ -6,7 +6,7 @@ const url = `https://knudsenweb.no/wp-json/wp/v2/posts/${id}?_embed=true`;
 const specificH1 = document.querySelector(".h1-specific");
 const specifictPost = document.querySelector(".specific-post");
 
-
+// Fetching specific blog post
 function blogSpecific(post) {
     console.log(post.id)
     specificH1.innerHTML = post.title.rendered;

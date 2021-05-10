@@ -1,24 +1,17 @@
-// const url = "https://knudsenweb.no/wp-json/wp/v2/posts?_embed=true";
-// const postContainer = document.querySelector(".posts");
-// // const singlePost = document.querySelector(".single-post");
+const url = "https://knudsenweb.no/wp-json/wp/v2/posts?_embed=true";
+const carouselContainer = document.querySelector(".carousel");
 
-// function blogList(posts) {
-//     for (post of posts) {
-//         let img = post._embedded["wp:featuredmedia"][0].source_url;
-//         console.log(img);
-//         postContainer.innerHTML += `<div class="single-post">
-//                                         <img src="${img}">
-//                                         <div>
-//                                             <h2>${post.title.rendered}</h2>
-//                                             <a href="blogspecific.html?id=${post.id}">Les mer</a>
-//                                         </div>
-//                                     </div>`
-//     }
-// }
+// Fetching and display images to carousel
+function blogList(posts) {
+    for (post of posts) {
+        let img = post._embedded["wp:featuredmedia"][0].source_url;
+        carouselContainer.innerHTML += `<img src="${img}">`                     
+    }
+}
 
-// fetch(url)
-//     .then(response => response.json())
-//     .then(data => blogList(data))
-//     .catch((error) => {
-//         console.log(error)
-//     });
+fetch(url)
+    .then(response => response.json())
+    .then(data => blogList(data))
+    .catch((error) => {
+        console.log(error)
+    });
