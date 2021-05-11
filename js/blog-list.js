@@ -11,7 +11,7 @@ function blogList(posts) {
                                         <img src="${img}">
                                         <div class="single-post-text">
                                             <h2>${post.title.rendered}</h2>
-                                            <a href="blogspecific.html?id=${post.id}">Les mer</a>
+                                            <a href="blogspecific.html?id=${post.id}" class="read-more">Les mer</a>
                                         </div>
                                     </div>`
     }

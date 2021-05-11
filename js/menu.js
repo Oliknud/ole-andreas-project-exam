@@ -1,11 +1,11 @@
 const menuLinks = document.querySelector(".menu-links");
-const x = document.querySelector("#burger");
-const cross = document.querySelector(".cross");
+const burger = document.querySelector("#burger");
+const x = document.querySelector(".cross");
 const body = document.querySelector("body");
 
 // Adding click events to menu icon and X icon
+burger.addEventListener("click", burgermenu);
 x.addEventListener("click", burgermenu);
-cross.addEventListener("click", burgermenu);
 
 function burgermenu() {
     // When toggled; slides in menu from left

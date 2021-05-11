@@ -5,49 +5,34 @@ const back = document.querySelector(".back");
 const next = document.querySelector(".next");
 
 // counter & container size
-let c = 1;
+let c = 0;
 const imgSize = container.clientWidth;
-console.log(imgSize)
+console.log(slide)
 
-// slide.style.transform = "translateX(0px)";
+slide.style.transform = "translateX(0px)";
 
 // Next button
-next.addEventListener("click", function(){
-    
-    if (c >= 8) {
+
+
+next.addEventListener("click", function() {
+    if (c >= 7) {
+        c = 0;
         slide.style.transform = "translateX(0px)";
-    } else {
-        slide.style.transition = "transform 0.5s ease-in-out";
-        slide.style.transform = "translateX(" + (-imgSize * c) + "px)";
-        c++;
+        c--;
     }
-        
-    
+        slide.style.transition = "transform 0.5s ease-in-out";
+        c++;
+        slide.style.transform = "translateX(" + (-imgSize * c) + "px)";
 });
 
 // Prev button
-back.addEventListener("click", function(){
+back.addEventListener("click", function() {
     if (c <= 0) {
-        slide.style.transform = "translateX(0px)";
-        
+        c = 7;
+        c++;
     }
     slide.style.transition = "transform 0.5s ease-in-out";
-    slide.style.transform = "translateX(" + (-imgSize * c) + "px)";
     c--;
+    slide.style.transform = "translateX(" + (-imgSize * c) + "px)";
+    
 });
-
-
-// Code for looping carousel *Only html code*
-// slide.addEventListener("transitionend", function() {
-//     if (img[c].id === "last") {
-//         slide.style.transition = "none";
-//         c = img.length -2;
-//         slide.style.transform = "translateX(" + (-imgSize * c) + "px)";
-//     } 
-
-//     if (img[c].id === "first") {
-//         slide.style.transition = "none";
-//         c = img.length - c;
-//         slide.style.transform = "translateX(" + (-imgSize * c) + "px)";
-//     } 
-// });
