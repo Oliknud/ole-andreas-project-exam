@@ -283,15 +283,15 @@ footer p {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 30px;
+    /* padding: 30px; */
     margin: 60px auto 0 auto;
-    /* max-width: 900px; */
+    width: 100%;
 }
 
 .specific-post p {
-    max-width: 900px;
     margin-top: 30px;
 }
+
 .specific-post img {
     width: 100%;
     max-width: 300px;
@@ -366,7 +366,7 @@ footer p {
 
     /* blog specific */
     .specific-post p {
-        max-width: 80%;
+        width: 80%;
         margin-top: 30px;
     }
 
