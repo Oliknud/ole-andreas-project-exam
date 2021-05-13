@@ -15,7 +15,11 @@ slide.style.transform = "translateX(0px)";
 
 
 next.addEventListener("click", function() {
-    if (c >= 7) {
+    if (imgSize === 300 && c >= 7) {
+        c = 0;
+        slide.style.transform = "translateX(0px)";
+        c--;
+    } else if (imgSize === 700 && c >= 3){
         c = 0;
         slide.style.transform = "translateX(0px)";
         c--;
@@ -27,8 +31,11 @@ next.addEventListener("click", function() {
 
 // Prev button
 back.addEventListener("click", function() {
-    if (c <= 0) {
+    if ( imgSize === 300 && c <= 0) {
         c = 7;
+        c++;
+    } else if ( imgSize === 700 && c <= 0) {
+        c = 3;
         c++;
     }
     slide.style.transition = "transform 0.5s ease-in-out";
