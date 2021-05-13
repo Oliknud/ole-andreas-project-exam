@@ -23,10 +23,15 @@ next.addEventListener("click", function() {
         c = 0;
         slide.style.transform = "translateX(0px)";
         c--;
+    } else if (imgSize === 1400 && c >= 1){
+        c = 0;
+        slide.style.transform = "translateX(0px)";
+        c--;
     }
-        slide.style.transition = "transform 0.5s ease-in-out";
-        c++;
-        slide.style.transform = "translateX(" + (-imgSize * c) + "px)";
+
+    slide.style.transition = "transform 0.5s ease-in-out";
+    c++;
+    slide.style.transform = "translateX(" + (-imgSize * c) + "px)";
 });
 
 // Prev button
@@ -37,7 +42,11 @@ back.addEventListener("click", function() {
     } else if ( imgSize === 700 && c <= 0) {
         c = 3;
         c++;
+    } else if (imgSize === 1400 && c <= 0){
+        c = 1;
+        c++;
     }
+    
     slide.style.transition = "transform 0.5s ease-in-out";
     c--;
     slide.style.transform = "translateX(" + (-imgSize * c) + "px)";
