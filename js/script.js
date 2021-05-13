@@ -5,7 +5,10 @@ const carouselContainer = document.querySelector(".carousel");
 function blogList(posts) {
     for (post of posts) {
         let img = post._embedded["wp:featuredmedia"][0].source_url;
-        carouselContainer.innerHTML += `<img src="${img}">`                     
+        carouselContainer.innerHTML += `<div class="card">
+                                            <img src="${img}">
+                                            <h3>${post.title.rendered}</h3>
+                                        </div>`                     
     }
 }
 

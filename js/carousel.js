@@ -7,7 +7,7 @@ const next = document.querySelector(".next");
 // counter & container size
 let c = 0;
 const imgSize = container.clientWidth;
-console.log(slide)
+console.log(imgSize)
 
 slide.style.transform = "translateX(0px)";
 
