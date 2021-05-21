@@ -1,4 +1,4 @@
-const url = "https://knudsenweb.no/wp-json/wp/v2/posts?_embed=true";
+const url = "https://knudsenweb.no/wp-json/wp/v2/posts?_embed=true&per_page=100";
 const postContainer = document.querySelector(".posts");
 const singlePost = document.querySelector(".single-post");
 const loadMore = document.querySelector(".load-more");
@@ -18,8 +18,9 @@ function blogList(posts) {
     }
 }
 
+loadMore.addEventListener("click", function() {
 
-
+})
 
 fetch(url)
     .then(response => response.json())

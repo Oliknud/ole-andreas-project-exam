@@ -166,7 +166,7 @@ footer p {
     display: flex;
     background-color: #8C3A48;
     overflow: hidden;
-    width: 300px;
+    width: 280px;
     height: 260px;
     /* margin: 0 auto; */
     align-items: center;
@@ -180,7 +180,7 @@ footer p {
 
 .card {
     display: flex;
-    width: 300px;
+    width: 280px;
     justify-content: center;
 }
 
@@ -201,7 +201,7 @@ footer p {
 .card img {
     width: 200px;
     height: 210px;
-    margin-right: 20px
+    margin-right: 10px
 } 
 
 .back, .next {
@@ -372,7 +372,7 @@ footer p {
     }
 
     .card {
-        margin: 0 25px;
+        margin: 0 35px;
     }
 
 
@@ -461,14 +461,6 @@ footer p {
 
     .container {
         width: 1400px;
-    }
-
-    .next {
-        margin-left: 1300px;
-    }
-
-    .back {
-        margin-right: 1300px;
     }
 
     /* blog list */
