@@ -1,4 +1,6 @@
-const url = "https://knudsenweb.no/wp-json/wp/v2/posts?_embed=true&per_page=100";
+const url = "https://knudsenweb.no/wp-json/wp/v2/posts?_embed=true";
+let i = 10;
+const urlMoreResults = `https://knudsenweb.no/wp-json/wp/v2/posts?_embed=true&per_page=10&offset=${i}`;
 const postContainer = document.querySelector(".posts");
 const singlePost = document.querySelector(".single-post");
 const loadMore = document.querySelector(".load-more");
@@ -19,7 +21,17 @@ function blogList(posts) {
 }
 
 loadMore.addEventListener("click", function() {
+    i += 2;
+    if (i >= 12) {
+        loadMore.style.display = "none";
+    }
 
+    fetch(urlMoreResults)
+    .then(response => response.json())
+    .then(data => blogList(data))
+    .catch((error) => {
+        console.log(error)
+    });
 })
 
 fetch(url)
