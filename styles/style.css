@@ -173,6 +173,10 @@ footer p {
     justify-content: center;
 }
 
+.card img {
+    width: 200px;
+}
+
 .carousel {
     display: flex;
     width: 100%;
