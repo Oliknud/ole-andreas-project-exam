@@ -174,7 +174,7 @@ footer p {
 }
 
 .card img {
-    width: 200px;
+    width: 160px;
 }
 
 .carousel {
@@ -192,6 +192,7 @@ footer p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-right: 16px;
 }
 
 .card-right a {
@@ -456,6 +457,28 @@ footer p {
         width: 80%;
         margin: 0 auto;
         
+    }
+
+    /* Hero */
+    .heroImgBackground {
+        background-color: #8C3A48;
+        width: 100%;
+    }
+
+    .heroImg {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .heroImg h1, .heroImg h2 {
+        
+        position: absolute;
+    }
+
+    .heroImg img {
+        width: 1100px;
     }
 }
 

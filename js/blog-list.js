@@ -14,7 +14,7 @@ function blogList(posts) {
                                         <img src="${img}">
                                         <div class="single-post-text">
                                             <h2>${post.title.rendered}</h2>
-                                            <a href="blogspecific.html?id=${post.id}" class="read-more">View</a>
+                                            <a href="blogspecific.html?id=${post.id}" class="read-more">View post</a>
                                         </div>
                                     </div>`
     }
@@ -32,7 +32,7 @@ loadMore.addEventListener("click", function() {
     .catch((error) => {
         console.log(error)
     });
-})
+});
 
 fetch(url)
     .then(response => response.json())

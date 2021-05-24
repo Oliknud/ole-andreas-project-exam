@@ -8,9 +8,8 @@ const specifictPost = document.querySelector(".specific-post");
 
 // Fetching specific blog post
 function blogSpecific(post) {
-    console.log(post.id)
     specificH1.innerHTML = post.title.rendered;
-    let img = post._embedded["wp:featuredmedia"][0].source_url;  
+    let img = post._embedded["wp:featuredmedia"][0].source_url;
     specifictPost.innerHTML += `<img src="${img}">
                                 <p>${post.content.rendered}</p>`
 }
