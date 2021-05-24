@@ -137,7 +137,6 @@ footer p {
 }
 
 .h1-mobile-index {
-    color: white;
     margin: 60px 0 20px 0;
 }
 
@@ -436,9 +435,21 @@ footer p {
         align-items: center;
     }
 
+    #logo {
+        width: 250px;
+    }
+
+    .desk-links {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 80%;
+    }
+
     .nav-desktop a {
         font-size: 18px;
         border-bottom: solid 4px transparent;
+        margin: 0 30px;
     }
 
     .nav-desktop a:hover {
@@ -467,9 +478,18 @@ footer p {
 
     .heroImg {
         display: flex;
-        justify-content: center;
+        
         margin: 0 auto;
         width: 80%;
+    }
+
+    .h1-mobile-index {
+        color: white;
+        margin: 0;
+    }
+
+    .heroImg h2 {
+        margin: 60px 0 0 30px;
     }
 
     .heroImg h1, .heroImg h2 {
@@ -478,7 +498,8 @@ footer p {
     }
 
     .heroImg img {
-        width: 1100px;
+        margin: 0 auto;
+        width: 1300px;
     }
 }
 
