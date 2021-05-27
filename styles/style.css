@@ -33,11 +33,45 @@ body {
     display: none;
 }
 
+/* Hero img */
+.heroImg {
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+}
+
+/* Hero */
+.heroImgBackground {
+    background-color: #8C3A48;
+    width: 100%;
+    
+}
+
+.h1-mobile-index {
+    color: white;
+    margin: 0;
+}
+
+.heroImg h1 {
+    margin: 0;
+}
+
+.heroImg h2 {
+    margin-top: 180px;
+}
+
+.heroImg h1, .heroImg h2 {
+    
+    position: absolute;
+}
+
+.heroImg img {
+    margin: 0 auto;
+    width: 100%;
+}
+
 
 /* Dropdown menu */
-
-
-
 .menu-links {
     display: flex;
     position: absolute;
@@ -145,14 +179,14 @@ footer p {
     flex-direction: column;
     justify-content: center;
     height: 400px;
-    margin-bottom: 30px;
+    margin: 60px 0;
 }
 
 .index-welcome p {
     margin: 10px 0;
 }
 
-/* slider */
+/* Carousel */
 
 .carousel-bg {
     display: flex;
@@ -218,23 +252,6 @@ footer p {
 
 .button-toggle {
     display: none;
-}
-
-/* .next {
-    margin-left: 300px;
-}
-
-.back {
-    margin-right: 300px;
-} */
-
-/* Index main */
-.index-welcome {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 600px;
-    margin-bottom: 30px;
 }
 
 
@@ -303,27 +320,34 @@ footer p {
 }
 
 .specific-post {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    /* padding: 30px; */
-    margin: 60px auto 0 auto;
-    width: 100%;
+    margin: 30px 0;
 }
 
 .specific-post p {
-    margin-bottom: 30px;
+    margin: 30px auto ;
 }
 
-.specific-post img {
+.modal-img {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+    margin-top: 60px;
+}
+
+.modal-active {
+    width: 90vw;
+    max-width: 400px;
+    margin-bottom: 60px;
+}
+
+.modal-img img {
+    
+    object-fit: cover;
     width: 100%;
-    max-width: 300px;
 }
-
-
 
 /* contact */
-
 #contact-form {
     display: flex;
     flex-direction: column;
@@ -339,8 +363,11 @@ footer p {
     font-size: 16px;
 }
 
-/* About us */
+textarea {
+    resize: none;
+}
 
+/* About us */
 .about-main {
     margin: 60px auto;
 }
@@ -348,10 +375,6 @@ footer p {
 .about-main p {
     margin-top: 30px;
 }
-
-
-
-
 
 /********** Tablet **********/
 @media screen and (min-width: 760px) {
@@ -389,17 +412,13 @@ footer p {
     .index-welcome {
         height: 500px;
         width: 80%;
+        max-width: 1520px;
     }
 
-    /* Bloglist */
-    /* .single-post {
-        margin: 0 auto 80px auto;
-    } */
-
-    /* blog specific */
-    .specific-post p {
+    /* Blog specific */
+    .specific-post {
         width: 80%;
-        margin-top: 30px;
+        max-width: 1480px;
     }
 
     /* About us */
@@ -429,6 +448,7 @@ footer p {
     .nav-desktop {
         display: flex;
         width: 80%;
+        max-width: 1520px;
         padding: 30px 0;
         margin: 0 auto;
         justify-content: space-between;
@@ -436,7 +456,7 @@ footer p {
     }
 
     #logo {
-        width: 250px;
+        width: 200px;
     }
 
     .desk-links {
@@ -470,46 +490,29 @@ footer p {
         
     }
 
-    /* Hero */
-    .heroImgBackground {
-        background-color: #8C3A48;
-        width: 100%;
-    }
-
     .heroImg {
-        display: flex;
-        
-        margin: 0 auto;
-        width: 80%;
-    }
-
-    .h1-mobile-index {
-        color: white;
-        margin: 0;
-    }
-
-    .heroImg h2 {
-        margin: 60px 0 0 30px;
-    }
-
-    .heroImg h1, .heroImg h2 {
-        
-        position: absolute;
+        max-width: 1520px;
     }
 
     .heroImg img {
         margin: 0 auto;
-        width: 1300px;
+        width: 60%;
     }
+
 }
 
 
 /********** Laptop **********/
 @media screen and (min-width: 1440px) {
 
+    main {
+        padding: 0;
+    }
+
     /* carousel */
     .carousel-bg {
-        padding: 80px 0;
+        width: 100%;
+        padding: 40px 0;
     }
 
     .container {
