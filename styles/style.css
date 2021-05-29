@@ -310,10 +310,11 @@ footer p {
     border-radius: 2px;
     background-color: #8C3A48;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .load-more {
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 
 /* blog specific */
@@ -363,14 +364,29 @@ footer p {
     max-width: 500px;
 }
 
-#contact-form input, textarea {
+.input-field {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 30px;
+}
+
+.input-field p {
+    /* display: none; */
+    color: rgb(219, 0, 0);
+}
+
+#contact-form input, textarea {
+    /* margin-bottom: 30px; */
     color: black;
     font-size: 16px;
 }
 
 textarea {
     resize: none;
+}
+
+.submit-btn {
+    margin-bottom: 30px;
 }
 
 /* About us */
@@ -505,6 +521,28 @@ textarea {
         width: 60%;
     }
 
+    /* Blog specific */
+    .specific-blog-post {
+        display: flex;
+        justify-content: center;
+        max-width: 1520px;
+        margin: 120px 0;
+    }
+
+    .specific-post {
+        margin-left: 120px;
+        width: 800px;
+    }
+
+    .modal-img img {
+        width: 300px;
+    }
+
+    /* About */
+    .about-main {
+        min-height: 600px;
+    }
+
 }
 
 
@@ -527,7 +565,7 @@ textarea {
 
     /* blog list */
     .posts {
-        margin: 60px 0;
+        margin: 120px 0 60px 0;
         justify-content: space-between;
     }
 

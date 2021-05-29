@@ -35,10 +35,13 @@
             <img src="img/burger.svg" alt="burger-icon" id="burger">
 
             <div class="nav-desktop">
-                <a href="index.html">Home</a>
-                <a href="bloglist.html">All posts</a>
-                <a href="about.html">About us</a>
-                <a href="contact.html" class="active-site">Contact us</a>
+                <img src="img/kamikaze-regular.svg" alt="anime blog logo" id="logo">
+                <div class="desk-links">
+                    <a href="index.html">Home</a>
+                    <a href="bloglist.html">All posts</a>
+                    <a href="about.html">About us</a>
+                    <a href="contact.html" class="active-site">Contact us</a>
+                </div>
             </div>
         </nav>
         <h1 class="h1-specific">Contact us</h1>
@@ -48,15 +51,31 @@
             <img src="img/skew.svg" alt="svg" class="skew-svg">
         </div>
     <main>
-    <form action="" id="contact-form">
-        <label for="name">Name:</label><br>
-        <input type="text" name="name" id="name">
-        <label for="email">Email:</label>
-        <input type="email" name="email" id="email">
-        <label for="subject">Subject:</label>
-        <input type="text" name="subject" id="subject">
-        <label for="message">Message:</label>
-        <textarea name="message" id="message" rows="6"></textarea>
+    <form action="submit" id="contact-form">
+        <div class="input-field">
+            <label for="name">Name:</label><br>
+            <input type="text" name="name" id="name">
+            <p class="nameError"></p>
+        </div>
+
+        <div class="input-field">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+            <p class="emailError"></p>
+        </div>
+
+        <div class="input-field">
+            <label for="subject">Subject:</label>
+            <input type="text" name="subject" id="subject">
+            <p class="subjectError"></p>
+        </div>
+
+        <div class="input-field">
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" rows="6"></textarea>
+            <p class="messageError"></p>
+        </div>
+
         <button class="submit-btn">Submit</button>
     </form>
 
@@ -70,6 +89,7 @@
             <a href="#"><img src="img/reddit-icon.svg" alt="">r/animeblog</a>
         </div>
     </footer>
+    <script src="js/contact.js"></script>
     <script src="js/menu.js"></script>
 </body>
 </html>
