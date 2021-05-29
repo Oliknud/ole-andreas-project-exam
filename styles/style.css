@@ -517,8 +517,6 @@ textarea {
         margin: 0 30px;
     }
 
-    
-
     .nav-desktop a:hover {
         border-bottom: solid 4px #252525;
     }
@@ -540,7 +538,6 @@ textarea {
         padding: 0;
         width: 80%;
         margin: 0 auto;
-        
     }
 
     .heroImg {
