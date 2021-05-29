@@ -4,6 +4,7 @@ const urlMoreResults = `https://knudsenweb.no/wp-json/wp/v2/posts?_embed=true&pe
 const postContainer = document.querySelector(".posts");
 const singlePost = document.querySelector(".single-post");
 const loadMore = document.querySelector(".load-more");
+const loadingAnimation = document.querySelector(".loadingDiv");
 
 // Fetch and display list of posts
 function blogList(posts) {
@@ -36,7 +37,10 @@ loadMore.addEventListener("click", function() {
 
 fetch(url)
     .then(response => response.json())
-    .then(data => blogList(data))
+    .then(data => {
+        loadingAnimation.style.display = "none";
+        loadMore.style.display = "flex";
+        blogList(data)})
     .catch((error) => {
         console.log(error)
     });

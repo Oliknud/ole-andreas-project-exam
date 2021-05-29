@@ -279,7 +279,7 @@ footer p {
     flex-wrap: wrap;
     max-width: 1100px;
     /* flex-direction: column; */
-    margin-top: 60px;
+    margin-top: 100px;
 }
 
 .single-post {
@@ -314,6 +314,7 @@ footer p {
 }
 
 .load-more {
+    display: none;
     margin-bottom: 60px;
 }
 
@@ -326,7 +327,17 @@ footer p {
     z-index: 1;
 }
 
+.specific-blog-post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1520px;
+    margin: 60px 0 30px;
+}
+
 .specific-post {
+    display: none;
     margin: 30px 0;
 }
 
@@ -335,7 +346,7 @@ footer p {
 }
 
 .modal-img {
-    display: flex;
+    display: none;
     align-items: center;
     flex-direction: column;
     width: 200px;
@@ -359,7 +370,7 @@ footer p {
     display: flex;
     flex-direction: column;
     padding: 30px 0;
-    margin-top: 60px;
+    margin: 120px 0;
     width: 100%;
     max-width: 500px;
 }
@@ -386,16 +397,28 @@ textarea {
 }
 
 .submit-btn {
-    margin-bottom: 30px;
+    margin: 30px 0;
 }
 
 /* About us */
 .about-main {
-    margin: 60px auto;
+    margin: 100px auto;
 }
 
 .about-main p {
     margin-top: 30px;
+}
+
+/* Loading */
+.loadingDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.loadingDiv p {
+    font-size: 32px;
 }
 
 /********** Tablet **********/
@@ -494,14 +517,22 @@ textarea {
         margin: 0 30px;
     }
 
+    
+
     .nav-desktop a:hover {
         border-bottom: solid 4px #252525;
+    }
+    
+    .logolink {
+        border: none !important;
+        margin: 0 !important;
+        /* Sorry Lasse ^*/
     }
 
     .active-site {
         border-bottom: none;
         background-color: #252525;
-        padding: 10px 10px 8px;
+        padding: 6px 10px 4px;
         border-radius: 2px;
     }
 
@@ -524,7 +555,8 @@ textarea {
     /* Blog specific */
     .specific-blog-post {
         display: flex;
-        justify-content: center;
+        flex-direction: row;
+        align-items: unset;
         max-width: 1520px;
         margin: 120px 0;
     }
@@ -541,6 +573,11 @@ textarea {
     /* About */
     .about-main {
         min-height: 600px;
+    }
+
+    /* loading */
+    .loadingDiv {
+        margin: 100px 0;
     }
 
 }
@@ -573,6 +610,10 @@ textarea {
         margin-top: 30px;
     }
 
+    .h1-mobile-index {
+        font-size: 42px;
+        padding-top: 60px;
+    }
       
 }
 
