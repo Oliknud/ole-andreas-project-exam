@@ -412,6 +412,7 @@ textarea {
 /* About us */
 .about-main {
     margin: 100px auto;
+    max-width: 1520px;
 }
 
 .about-main p {
@@ -457,8 +458,12 @@ textarea {
         width: 700px;
     }
 
+    .carousel {
+        width: 700px;
+    }
+
     .card {
-        margin: 0 35px;
+        margin: 0 45px;
     }
 
 
@@ -565,7 +570,7 @@ textarea {
         flex-direction: row;
         align-items: unset;
         max-width: 1520px;
-        margin: 120px 0;
+        margin: 170px 0;
     }
 
     .specific-post {
@@ -611,6 +616,14 @@ textarea {
         width: 1400px;
     }
 
+    .carousel {
+        width: 1400px;
+    }
+
+    .card {
+        margin: 0 45px;
+    }
+
     /* blog list */
     .posts {
         margin: 120px 0 60px 0;
@@ -626,13 +639,4 @@ textarea {
         padding-top: 60px;
     }
       
-}
-
-
-
-
-/********** desktop **********/
-@media screen and (min-width: 1700px) {
-
-    
 }

@@ -4,7 +4,7 @@ const slide = document.querySelector(".carousel");
 const back = document.querySelector(".back");
 const next = document.querySelector(".next");
 
-const url = "https://knudsenweb.no/wp-json/wp/v2/posts?_embed=true";
+const url = "https://knudsenweb.no/wp-json/wp/v2/posts?_embed=true&per_page=8";
 const carouselContainer = document.querySelector(".carousel");
 
 // Fetching and display images to carousel
