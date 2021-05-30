@@ -1,6 +1,5 @@
 const container = document.querySelector(".container");
 const slide = document.querySelector(".carousel");
-// const img = document.querySelectorAll(".carousel img");
 const back = document.querySelector(".back");
 const next = document.querySelector(".next");
 
@@ -38,8 +37,6 @@ console.log(imgSize)
 slide.style.transform = "translateX(0px)";
 
 // Next button
-
-
 next.addEventListener("click", function() {
     if (imgSize === 260 && c >= 7) {
         c = 0;
