@@ -14,8 +14,8 @@ function blogSpecific(post) {
     // Content
     specificH1.innerHTML = post.title.rendered;
     let img = post._embedded["wp:featuredmedia"][0].source_url;
-    specifictPost.innerHTML += `<p>${post.content.rendered}</p>`
-    modalImg.innerHTML += `<img src="${img}">`
+    specifictPost.innerHTML += `<p>${post.content.rendered}</p>`;
+    modalImg.innerHTML += `<img src="${img}">`;
     specifictPost.style.display = "flex";
 
     // Event for modal
@@ -29,18 +29,20 @@ function blogSpecific(post) {
             modalDiv.classList.remove("modal-active");
             modalDiv.style.display = "none";
             body.style.overflow = "visible";
-        })
+        });
     });
 
     // Meta description and title
     const title = document.querySelector("title");
     const metaDesc = document.querySelector("#metaDesc");
-    const excerpt = post.excerpt.rendered.replace("<p>", "").replace("</p>", "");
 
-    title.innerHTML = ` The Anime Blog | ${post.title.rendered} `
+    // Replace p tag with empty string
+    const excerpt = post.excerpt.rendered.replace("<p>", "").replace("</p>", "");
+    title.innerHTML = ` The Anime Blog | ${post.title.rendered}`;
+
+    // Trim white space at end of excerpt
     metaDesc.setAttribute("content", `${excerpt.trimEnd()}`);
 }
-
 
 fetch(url)
     .then(response => response.json())
