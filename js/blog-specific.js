@@ -24,7 +24,7 @@ function blogSpecific(post) {
         modalDiv.innerHTML = `<img src="${img}">`
         modalDiv.classList.add("modal-active");
         body.style.overflow = "hidden";
-
+        window.scrollTo(500, 0);
         modalDiv.addEventListener("click", function() {
             modalDiv.classList.remove("modal-active");
             modalDiv.style.display = "none";
