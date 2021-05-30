@@ -41,7 +41,7 @@ slide.style.transform = "translateX(0px)";
 
 
 next.addEventListener("click", function() {
-    if (imgSize === 280 && c >= 7) {
+    if (imgSize === 260 && c >= 7) {
         c = 0;
         slide.style.transform = "translateX(0px)";
         c--;
