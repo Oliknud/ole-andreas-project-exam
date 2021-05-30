@@ -241,7 +241,6 @@ footer {
 } 
 
 .back, .next {
-    /* position: absolute; */
     width: 20px;
     z-index: 1;
     opacity: 0.8;
@@ -389,12 +388,10 @@ footer {
 }
 
 .input-field p {
-    /* display: none; */
     color: rgb(219, 0, 0);
 }
 
 #contact-form input, textarea {
-    /* margin-bottom: 30px; */
     color: black;
     font-size: 16px;
 }
