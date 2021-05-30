@@ -11,12 +11,14 @@ const loadingAnimation = document.querySelector(".loadingDiv");
 
 // Fetching specific blog post
 function blogSpecific(post) {
+    // Content
     specificH1.innerHTML = post.title.rendered;
     let img = post._embedded["wp:featuredmedia"][0].source_url;
     specifictPost.innerHTML += `<p>${post.content.rendered}</p>`
     modalImg.innerHTML += `<img src="${img}">`
     specifictPost.style.display = "flex";
 
+    // Event for modal
     modalImg.addEventListener("click", function(){
         modalDiv.style.display = "flex";
         modalDiv.innerHTML = `<img src="${img}">`
@@ -29,6 +31,14 @@ function blogSpecific(post) {
             body.style.overflow = "visible";
         })
     });
+
+    // Meta description and title
+    const title = document.querySelector("title");
+    const metaDesc = document.querySelector("#metaDesc");
+    const excerpt = post.excerpt.rendered.replace("<p>", "").replace("</p>", "");
+
+    title.innerHTML = ` The Anime Blog | ${post.title.rendered} `
+    metaDesc.setAttribute("content", `${excerpt.trimEnd()}`);
 }
 
 
